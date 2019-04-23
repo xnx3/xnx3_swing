@@ -21,18 +21,18 @@ public class LogFrame extends JFrame {
 	/**
 	 * Launch the application.
 	 */
-	public static void main(String[] args) {
-		EventQueue.invokeLater(new Runnable() {
-			public void run() {
-				try {
-					LogFrame frame = new LogFrame();
-					frame.setVisible(true);
-				} catch (Exception e) {
-					e.printStackTrace();
-				}
-			}
-		});
-	}
+//	public static void main(String[] args) {
+//		EventQueue.invokeLater(new Runnable() {
+//			public void run() {
+//				try {
+//					LogFrame frame = new LogFrame();
+//					frame.setVisible(true);
+//				} catch (Exception e) {
+//					e.printStackTrace();
+//				}
+//			}
+//		});
+//	}
 
 	/**
 	 * Create the frame.
@@ -70,7 +70,7 @@ public class LogFrame extends JFrame {
 	
 	/**
 	 * 在窗口中的JTextArea的最后加入一行
-	 * @param 要加入的那行文本
+	 * @param text 要加入的那行文本
 	 */
 	public void appendLineForLast(String text){
 		textArea.append("\n"+text);
@@ -78,7 +78,7 @@ public class LogFrame extends JFrame {
 	
 	/**
 	 * 在窗口中的JTextArea的最后加入一行.并且使其滚动到最后
-	 * @param 要加入的那行文本
+	 * @param text 要加入的那行文本
 	 */
 	public void appendLineForLastAndPositionLast(String text){
 		appendLineForLast(text);

@@ -24,7 +24,7 @@ public class FileChooserUtil {
 	
     /**
      * 读取文件内容，通过用户自己打开文件选择框的方式
-     * @param encode 以什么编码读取文件，如：{@link FileUtil#UTF8}
+     * @param encode 以什么编码读取文件，如：UTF-8
      * @return 文件的内容，若用户没有打开或者打开失败，返回null
      */
     public static String readFileByJFileChooser(String encode){

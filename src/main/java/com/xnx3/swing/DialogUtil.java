@@ -68,14 +68,13 @@ public class DialogUtil {
 
 
 	/**
-	 * 在当前屏幕上显示一段信息提示，配合{@link UI#hiddenMessageForMouse()} 使用
+	 * 在当前屏幕上显示一段信息提示，配合 hiddenMessageForMouse() 使用
 	 * @param x 信息显示框的左上角在屏幕的x坐标
 	 * @param y 信息显示框的左上角在屏幕的y坐标
 	 * @param width 显示的提示框宽度
 	 * @param height 显示的提示框高度
 	 * @param html 显示的文字，支持html格式
 	 * @return 显示文字的组件JLabel，可对此组件进行调整
-	 * @see UI#showMessageForMouse(MouseEvent, int, int, String)
 	 */
 	public static JLabel showMessageForMouse(int x,int y,int width,int height,String html){
 		jlabelMessageForMouse.setText("<html>"+html);
@@ -87,20 +86,19 @@ public class DialogUtil {
 	
 	
 	/**
-	 * 隐藏鼠标跟随的信息提示 配合 {@link UI#showMessageForMouse(MouseEvent, int, int, String)} 使用
+	 * 隐藏鼠标跟随的信息提示 配合 showMessageForMouse() 使用
 	 */
 	public static void hiddenMessageForMouse(){
 		jframeMessageForMouse.setVisible(false);
 	}
 	
 	/**
-	 * 显示鼠标跟随的信息提示，配合{@link UI#hiddenMessageForMouse()} 使用
+	 * 显示鼠标跟随的信息提示，配合 hiddenMessageForMouse() 使用
 	 * @param mouseEvent 添加鼠标监听后，传入鼠标的监听对象 java.awt.event.MouseEvent
 	 * @param width 显示的提示框宽度
 	 * @param height 显示的提示框高度
 	 * @param html 显示的文字，支持html格式
 	 * @return 显示文字的组件JLabel，可对此组件进行调整
-	 * @see UI#showMessageForMouse(int, int, int, int, String)
 	 */
 	public static JLabel showMessageForMouse(MouseEvent mouseEvent,int width,int height,String html){
 		int x=0;

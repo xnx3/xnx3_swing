@@ -16,9 +16,9 @@ public class TrayUtil {
 
 	/** 
      * 创建此程序的系统托盘，本程序的托盘创建、以及使用返回的对象进行托盘弹出信息提示等
-     * <li>MyEclipse编辑时一般菜单会出现中文乱码，不用在意。打包出去后会正常。
-     * <li>简单使用：<pre>SystemUtil.createTray(MyClassName.class.getResource("res/icon.png"), "显示文字", null)</pre>
-     * <li>高级使用：<a href="http://www.xnx3.com/doc/j2se_util/20150307/131.html">http://www.xnx3.com/doc/j2se_util/20150307/131.html</a>
+     * <p>MyEclipse编辑时一般菜单会出现中文乱码，不用在意。打包出去后会正常。</p>
+     * 简单使用：<pre>SystemUtil.createTray(MyClassName.class.getResource("res/icon.png"), "显示文字", null)</pre>
+     * <p>高级使用：<a href="http://www.xnx3.com/doc/j2se_util/20150307/131.html">http://www.xnx3.com/doc/j2se_util/20150307/131.html</a></p>
      * @param imageIcon 托盘的图标所在路径。若图片过大会不显示！建议尺寸15*15的png图片。 如 <pre>new ImageIcon(MyClassName.class.getResource("res/icon.png"))</pre> 其中trayico.png在当前的目录下的res文件夹内，MyClassName为当前生成次托盘的类名
      * @param title 鼠标放到托盘图标上时显示的文字
      * @param popupMenu 托盘右键点击后弹出的菜单项。若不想有菜单项或者不需要，可传入null
